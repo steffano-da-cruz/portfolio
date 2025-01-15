@@ -1,0 +1,33 @@
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.general-padding {
+  padding: 8rem 0 2rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-gap {
+  column-gap: 4rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.normal-size {
+  font-size: 2rem;
+}
