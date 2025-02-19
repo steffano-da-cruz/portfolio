@@ -22,6 +22,11 @@ body {
 /* REFACTORED */
 /*********************/
 
+.social-logo,
+.project-image {
+  transition: 0.3s;
+}
+
 .portfolio-header,
 .portfolio-footer {
   justify-content: space-between;
@@ -30,42 +35,14 @@ body {
   padding: 3rem !important;
 }
 
-/*********************/
-/* GENERAL */
-/*********************/
-
-a:link {
-  color: inherit;
-  text-decoration: none;
+.hero-section,
+.projects-section {
+  margin-top: 5rem;
 }
 
-a:visited {
-  color: inherit;
-}
-
-ul li {
-  list-style: none;
-}
-
-.steffano-logo {
-  font-size: 4rem;
-  font-weight: 600;
-  color: inherit;
-}
-
-.contact-me {
-  text-transform: uppercase;
-  border-bottom: 3px solid #800080;
-  padding-bottom: 5px;
-  transition: all 0.3s;
-}
-
-.contact-me:hover {
-  color: #800080;
-
-  font-weight: 600;
-
-  border-bottom: none;
+.projects-title,
+.contact-title {
+  font-size: 8rem;
 }
 
 /*********************/
@@ -78,7 +55,6 @@ ul li {
 
 .social-logo {
   font-size: 4rem;
-  transition: 0.3s;
 }
 
 .social-logo:hover {
@@ -86,13 +62,12 @@ ul li {
 }
 
 /*********************/
-/* SECTION HERO */
+/* HERO SECTION */
 /*********************/
 
 .hero-container {
   grid-template-columns: 70% 30%;
   height: 80vh;
-  border-bottom: 2px solid white;
 }
 
 .hero-title {
@@ -103,7 +78,7 @@ ul li {
 }
 
 .hero-title span {
-  border-bottom: 6px solid #800080;
+  border-bottom: 6px solid #b800b8;
 }
 
 .hero-description {
@@ -125,7 +100,7 @@ ul li {
 }
 
 .skills-list {
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 6rem;
 }
 
@@ -135,19 +110,53 @@ ul li {
   padding-bottom: 1.4rem;
 }
 
-.skill-description {
+.skill-level {
   font-size: 1.8rem;
 }
 
 /*********************/
-/* SECTION HERO */
+/* PROJECTS SECTION */
 /*********************/
 
 .projects-heading {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
-.projects-title {
-  font-size: 8rem;
+.projects-list {
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-image:hover {
+  transform: scale(1.01);
+}
+
+.project-name {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.project-name:hover {
+  color: #b800b8;
+}
+
+.project-techs {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/*********************/
+/* CONTACT SECTION */
+/*********************/
+
+.contact-container {
+  align-items: center;
 }

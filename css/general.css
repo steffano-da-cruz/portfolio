@@ -1,3 +1,7 @@
+/***************/
+/* STRUCTURE */
+/***************/
+
 .container {
   max-width: 140rem;
   margin: 0 auto;
@@ -8,11 +12,63 @@
   padding: 8rem 0 2rem 0;
 }
 
+/***************/
+/* LINKS */
+/***************/
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+/***************/
+/* COMMON */
+/***************/
+
+.steffano-logo {
+  font-size: 4rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.contact-me {
+  text-transform: uppercase;
+  border-bottom: 3px solid #b800b8;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.contact-me:hover {
+  color: #b800b8;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+/***************/
+/* FLEX AND GRID */
+/***************/
+
 .flex {
   display: flex;
 }
 
-.flex-gap {
+.fl-dr-cl {
+  flex-direction: column;
+}
+
+.cl-gp-sm {
+  column-gap: 2rem;
+}
+
+.cl-gp {
   column-gap: 4rem;
 }
 
@@ -20,13 +76,53 @@
   display: grid;
 }
 
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/***************/
+/* SPACING */
+/***************/
+
+.mg-tp-sm {
+  margin-top: 1rem;
+}
+
+.mg-bt-sm {
+  margin-bottom: 1rem;
+}
+
+/***************/
+/* OPACITY */
+/***************/
+
+.fade {
+  opacity: 0.8;
+}
+
+/***************/
+/* BORDER */
+/***************/
+
+.bd-bt {
+  border-bottom: 2px solid white;
+}
+
+/***************/
+/* TEXT COLOR */
+/***************/
+
 .white-color {
   color: #ffffff;
 }
+
+/***************/
+/* TEXT SIZE */
+/***************/
 
 .normal-size {
   font-size: 2rem;
