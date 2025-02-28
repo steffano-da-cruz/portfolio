@@ -6,57 +6,63 @@
     <link rel="icon" href="" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Steffano da Cruz | Portfolio</title>
   </head>
   <body>
-    <header class="portfolio-header flex container">
-      <a href="#" class="steffano-logo">steffanodacruz</a>
-      <nav class="header-nav">
-        <ul class="header-nav-list flex cl-gp">
-          <li>
-            <a href="https://github.com/steffano-da-cruz" target="_blank">
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-github"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/steffano-da-cruz/"
-              target="_blank"
-            >
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-linkedin"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=61556914100571"
-              target="_blank"
-            >
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-facebook"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/steffano_cruz/" target="_blank">
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-instagram"
-              ></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="portfolio-header mg-bt-bg">
+      <div class="nav-container container flex">
+        <a class="steffano-logo" href="#">steffanodacruz</a>
+        <nav class="nav-box">
+          <ul class="flex cl-gp-md">
+            <li>
+              <a href="https://github.com/steffano-da-cruz" target="_blank">
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-github"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/steffano-da-cruz/"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-linkedin"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556914100571"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/steffano_cruz/"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="portfolio-main">
-      <section class="hero-section general-padding">
+      <section class="hero-section general-padding-sm">
         <div class="hero-container container grid bd-bt">
           <div class="hero-info-box">
             <h1 class="hero-title">
@@ -64,7 +70,7 @@
               <br />
               I'm <span>Steffano da Cruz</span>.
             </h1>
-            <p class="hero-description normal-size fade">
+            <p class="hero-description normal-size fade ln-ht">
               I'm a web developer looking for an opportunity at the front-end
               development area in order to apply my skills and knowledges in
               HTML, CSS, JavaScript, React and TypeScript.
@@ -81,7 +87,7 @@
         </div>
       </section>
 
-      <section class="skills-section general-padding">
+      <section class="skills-section general-padding-sm mg-bt-md">
         <div class="skills-container container">
           <ul class="skills-list grid grid-3-cols">
             <li>
@@ -109,6 +115,10 @@
               <p class="skill-level">Beginner</p>
             </li>
             <li>
+              <p class="skill-name">SQL</p>
+              <p class="skill-level">Beginner</p>
+            </li>
+            <li>
               <p class="skill-name">English</p>
               <p class="skill-level">Advanced</p>
             </li>
@@ -120,7 +130,7 @@
         </div>
       </section>
 
-      <section class="projects-section general-padding">
+      <section class="projects-section general-padding-sm mg-bt-bg">
         <div class="projects-container container">
           <div class="projects-heading flex">
             <h2 class="projects-title">Projects</h2>
@@ -243,69 +253,87 @@
         </div>
       </section>
 
-      <section class="contact-section general-padding">
-        <div class="contact-container container bd-bt grid grid-2-cols">
+      <section class="contact-section general-padding-md gr-bg">
+        <div class="contact-container container grid grid-2-cols">
           <div class="contact-info">
-            <h2 class="contact-title">Contact</h2>
-            <p class="contact-description normal-size fade">
+            <h2 class="contact-title mg-bt-md">Contact</h2>
+            <p class="contact-description normal-size fade ln-ht">
               I would love to hear about your opinion and how I could improve.
               Please fill in the form, and I'll get back to you as soon as
               possible.
             </p>
           </div>
-          <form class="contact-form flex fl-dr-cl">
-            <input class="contact-input" type="text" placeholder="NAME" />
-            <input class="contact-input" type="text" placeholder="EMAIL" />
-            <input class="contact-input" type="text" placeholder="MESSAGE" />
+          <form class="contact-form flex dr-cl">
+            <input
+              class="contact-input bd-bt gr-bg"
+              type="text"
+              placeholder="NAME"
+              required
+            />
+            <input
+              class="contact-input bd-bt gr-bg"
+              type="email"
+              placeholder="EMAIL"
+              required
+            />
+            <textarea class="contact-input bd-bt gr-bg" placeholder="MESSAGE"></textarea>
+              
+          </textarea>
           </form>
+          <a class="send-message normal-size mg-tp-md" href="#">Send message</a>
         </div>
       </section>
     </main>
 
-    <footer class="portfolio-footer flex container">
-      <a href="#" class="steffano-logo">steffanodacruz</a>
-      <nav class="header-nav">
-        <ul class="header-nav-list flex cl-gp">
-          <li>
-            <a href="https://github.com/steffano-da-cruz" target="_blank">
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-github"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/steffano-da-cruz/"
-              target="_blank"
-            >
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-linkedin"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=61556914100571"
-              target="_blank"
-            >
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-facebook"
-              ></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/steffano_cruz/" target="_blank">
-              <ion-icon
-                class="social-logo white-color"
-                name="logo-instagram"
-              ></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <footer class="portfolio-footer gr-bg">
+      <div class="nav-container container flex bd-tp">
+        <a class="steffano-logo" href="#">steffanodacruz</a>
+        <nav class="nav-box">
+          <ul class="flex cl-gp-md">
+            <li>
+              <a href="https://github.com/steffano-da-cruz" target="_blank">
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-github"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/steffano-da-cruz/"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-linkedin"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61556914100571"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/steffano_cruz/"
+                target="_blank"
+              >
+                <ion-icon
+                  class="social-logo wt-tx"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <script
       type="module"

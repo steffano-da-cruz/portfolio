@@ -8,8 +8,12 @@
   padding: 0 3rem;
 }
 
-.general-padding {
-  padding: 8rem 0 2rem 0;
+.general-padding-sm {
+  padding: 4rem 0 8rem 0;
+}
+
+.general-padding-md {
+  padding: 6rem 0 10rem 0;
 }
 
 /***************/
@@ -33,23 +37,38 @@ ul li {
 /* COMMON */
 /***************/
 
+.nav-container {
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4rem 3rem !important;
+}
+
 .steffano-logo {
   font-size: 4rem;
   font-weight: 600;
   color: inherit;
 }
 
-.contact-me {
+.contact-me,
+.send-message {
+  height: 3.4rem;
   text-transform: uppercase;
   border-bottom: 3px solid #b800b8;
   padding-bottom: 5px;
   transition: all 0.3s;
 }
 
-.contact-me:hover {
+.contact-me:hover,
+.send-message:hover {
   color: #b800b8;
   font-weight: 600;
   border-bottom: none;
+}
+
+.send-message {
+  grid-column: 2;
+  justify-self: end;
 }
 
 /***************/
@@ -60,15 +79,19 @@ ul li {
   display: flex;
 }
 
-.fl-dr-cl {
+.dr-cl {
   flex-direction: column;
+}
+
+.rw-gp {
+  row-gap: 4rem;
 }
 
 .cl-gp-sm {
   column-gap: 2rem;
 }
 
-.cl-gp {
+.cl-gp-md {
   column-gap: 4rem;
 }
 
@@ -85,15 +108,43 @@ ul li {
 }
 
 /***************/
-/* SPACING */
+/* MARGIN */
 /***************/
 
 .mg-tp-sm {
   margin-top: 1rem;
 }
 
+.mg-tp-md {
+  margin-top: 2rem;
+}
+
 .mg-bt-sm {
   margin-bottom: 1rem;
+}
+
+.mg-bt-md {
+  margin-bottom: 2rem;
+}
+
+.mg-bt-bg {
+  margin-bottom: 4rem;
+}
+
+/***************/
+/* PADDING */
+/***************/
+
+.pd-tp-sm {
+  padding-top: 1rem;
+}
+
+.pd-bt-bg {
+  padding-bottom: 4rem;
+}
+
+.pd-bt-hg {
+  padding-bottom: 8rem;
 }
 
 /***************/
@@ -109,14 +160,26 @@ ul li {
 /***************/
 
 .bd-bt {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #949494;
+}
+
+.bd-tp {
+  border-top: 2px solid #949494;
+}
+
+/***************/
+/* BACKGROUND COLOR */
+/***************/
+
+.gr-bg {
+  background-color: #252525;
 }
 
 /***************/
 /* TEXT COLOR */
 /***************/
 
-.white-color {
+.wt-tx {
   color: #ffffff;
 }
 
@@ -126,4 +189,12 @@ ul li {
 
 .normal-size {
   font-size: 2rem;
+}
+
+/***************/
+/* LINE-HEIGHT */
+/***************/
+
+.ln-ht {
+  line-height: 1.4;
 }

@@ -27,31 +27,19 @@ body {
   transition: 0.3s;
 }
 
-.portfolio-header,
-.portfolio-footer {
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 3rem !important;
-}
-
-.hero-section,
-.projects-section {
-  margin-top: 5rem;
-}
-
 .projects-title,
 .contact-title {
   font-size: 8rem;
 }
 
+.portfolio-header,
+.portfolio-footer {
+  padding-bottom: 5rem;
+}
+
 /*********************/
 /* HEADER */
 /*********************/
-
-.header-nav {
-  z-index: 999;
-}
 
 .social-logo {
   font-size: 4rem;
@@ -84,7 +72,6 @@ body {
 .hero-description {
   font-size: 2rem;
   padding-right: 24rem;
-  line-height: 1.4;
   margin-bottom: 8rem;
 }
 
@@ -159,4 +146,19 @@ body {
 
 .contact-container {
   align-items: center;
+  column-gap: 30rem;
+}
+
+.contact-input {
+  color: #949494;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  background-color: #000000;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-input:last-child {
+  padding-bottom: 8rem;
 }

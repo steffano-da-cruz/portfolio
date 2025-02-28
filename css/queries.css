@@ -1,0 +1,10 @@
+/**************************/
+/* BELOW 1669px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 104em) {
+  .hero-image {
+    top: -30rem;
+    right: 0rem;
+  }
+}
