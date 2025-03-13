@@ -82,6 +82,7 @@ body {
 
   height: 110rem;
   width: 60rem;
+  object-fit: cover;
   filter: grayscale(100%) brightness(110%);
   z-index: -1;
 }
