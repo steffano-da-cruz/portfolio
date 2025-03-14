@@ -50,6 +50,15 @@ ul li {
   color: inherit;
 }
 
+.send-message {
+  justify-self: end;
+
+  color: #fff;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 .contact-me,
 .send-message {
   height: 3.4rem;
@@ -64,11 +73,6 @@ ul li {
   color: #b800b8;
   font-weight: 600;
   border-bottom: none;
-}
-
-.send-message {
-  grid-column: 2;
-  justify-self: end;
 }
 
 /***************/
@@ -97,6 +101,10 @@ ul li {
 
 .grid {
   display: grid;
+}
+
+.grid-1-col {
+  grid-template-columns: 1fr;
 }
 
 .grid-2-cols {

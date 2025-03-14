@@ -75,7 +75,9 @@
               development area in order to apply my skills and knowledges in
               HTML, CSS, JavaScript, React and TypeScript.
             </p>
-            <a class="contact-me normal-size" href="#">Contact me</a>
+            <a class="contact-me normal-size" href="#contact-section"
+              >Contact me</a
+            >
           </div>
           <div class="hero-image-box">
             <img
@@ -134,7 +136,9 @@
         <div class="projects-container container">
           <div class="projects-heading flex">
             <h2 class="projects-title">Projects</h2>
-            <a class="contact-me normal-size" href="#">Contact me</a>
+            <a class="contact-me normal-size" href="#contact-section"
+              >Contact me</a
+            >
           </div>
           <div>
             <ul class="projects-list grid grid-2-cols">
@@ -253,7 +257,10 @@
         </div>
       </section>
 
-      <section class="contact-section general-padding-md gr-bg">
+      <section
+        id="contact-section"
+        class="contact-section general-padding-md gr-bg"
+      >
         <div class="contact-container container grid grid-2-cols">
           <div class="contact-info">
             <h2 class="contact-title mg-bt-md">Contact</h2>
@@ -263,7 +270,7 @@
               possible.
             </p>
           </div>
-          <form class="contact-form flex dr-cl" netlify>
+          <form class="contact-form grid grid-1-col dr-cl" netlify>
             <input
               class="contact-input bd-bt gr-bg"
               type="text"
@@ -279,9 +286,12 @@
             <textarea
               class="contact-input bd-bt gr-bg"
               placeholder="MESSAGE"
+              required
             ></textarea>
+            <button class="send-message normal-size mg-tp-md" type="submit">
+              Send message
+            </button>
           </form>
-          <a class="send-message normal-size mg-tp-md" href="#">Send message</a>
         </div>
       </section>
     </main>
