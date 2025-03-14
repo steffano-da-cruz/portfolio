@@ -1,2 +1,2 @@
 # portfolio
-All my projects so far.
+Know more about my skills and projects.
