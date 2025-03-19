@@ -8,9 +8,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let messageInpValue = "";
 let emailInpValue = "";
 
-messageBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-
+messageBtn.addEventListener("click", function () {
   messageInpValue = messageInp.value;
   emailInpValue = emailInp.value;
 
