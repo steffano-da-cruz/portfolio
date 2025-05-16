@@ -1,0 +1,203 @@
+/* STRUCTURE */
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.section-padding {
+  padding: 4rem 0 8rem 0;
+}
+
+/* COMMON */
+
+ul li {
+  list-style: none;
+}
+
+.contact-button,
+.message-button {
+  font-family: inherit;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 3px solid #3eaf44;
+  color: inherit;
+  background-color: inherit;
+  text-transform: uppercase;
+  padding: 0 0 1rem 0;
+  transition: all 0.3s;
+}
+
+.message-button {
+  align-self: flex-end;
+
+  height: 4rem;
+}
+
+.contact-button:hover,
+.project-name:hover,
+.message-button:hover {
+  color: #3eaf44;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+/* LINKS */
+
+a:link {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+/* FLEXBOX */
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* FLEXBOX AND GRID */
+
+.col-gap-sm {
+  column-gap: 2rem;
+}
+
+.col-gap-md {
+  column-gap: 3rem;
+}
+
+.col-gap-bg {
+  column-gap: 4rem;
+}
+
+.col-gap-hg {
+  column-gap: 6rem;
+}
+
+.row-gap-sm {
+  row-gap: 2rem;
+}
+
+.row-gap-md {
+  row-gap: 3rem;
+}
+
+.row-gap-bg {
+  row-gap: 4rem;
+}
+
+.row-gap-hg {
+  row-gap: 6rem;
+}
+
+/* TEXT SIZE */
+
+.txt-sm {
+  font-size: 2rem;
+}
+
+.txt-md {
+  font-size: 4rem;
+}
+
+.txt-bg {
+  font-size: 6rem;
+}
+
+.txt-hg {
+  font-size: 8rem;
+}
+
+/* FONT WEIGHT */
+
+.txt-light {
+  font-weight: 500;
+}
+
+.txt-heavy {
+  font-weight: 600;
+}
+
+.txt-heavier {
+  font-weight: 700;
+}
+
+/* MARGIN */
+
+.mar-top-sm {
+  margin-top: 2rem;
+}
+
+.mar-top-md {
+  margin-top: 4rem;
+}
+
+.mar-top-bg {
+  margin-top: 8rem;
+}
+
+.mar-btm-sm {
+  margin-bottom: 2rem;
+}
+
+.mar-btm-md {
+  margin-bottom: 4rem;
+}
+
+.mar-btm-bg {
+  margin-bottom: 8rem;
+}
+
+/* LINE HEIGHT */
+
+.ln-ht-sm {
+  line-height: 1;
+}
+
+.ln-ht-md {
+  line-height: 1.2;
+}
+
+.ln-ht-bg {
+  line-height: 1.4;
+}
+
+/* CHANGE BG COLOR */
+
+.bg-color {
+  background-color: #2c2c2c;
+}
+
+/* CHANGE OPACITY */
+
+.fade {
+  opacity: calc(0.7);
+}
+
+/* TO UPPERCASE */
+
+.to-uppercase {
+  text-transform: uppercase;
+}

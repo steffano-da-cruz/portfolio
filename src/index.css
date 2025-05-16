@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* REFACTORED */
+
+.navigation-bar,
+.projects-title-box,
+.contact-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAVIGATION BAR */
+
+.navigation-bar {
+  padding: 4rem 3rem !important;
+}
+
+.logo {
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+/* HERO SECTION */
+
+.hero-container {
+  grid-template-columns: 1.5fr 1fr;
+
+  height: 85vh;
+}
+
+.hero-title {
+  margin: 8rem 0 6rem 0;
+  font-size: 8rem;
+}
+
+.hero-title span {
+  border-bottom: 6px solid #3eaf44;
+}
+
+.hero-description {
+  margin-top: 3rem;
+  padding-right: 18rem;
+}
+
+.hero-image-box {
+  position: relative;
+}
+
+.hero-image {
+  height: 110rem;
+  width: 114%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(110%);
+
+  position: absolute;
+  top: -47rem;
+  right: -3rem;
+
+  z-index: -1;
+}
+
+/* SKILLS SECTION */
+
+.skills-list {
+  row-gap: 6rem;
+  column-gap: 10rem;
+}
+
+.skill-name {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-level {
+  font-size: 1.8rem;
+}
+
+/* PROJECTS SECTION */
+
+.project-image {
+  width: 100%;
+  margin-bottom: 1.6rem;
+  transition: 0.3s;
+}
+
+.project-image:hover {
+  transform: scale(1.01);
+}
+
+.project-name {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  transition: 0.3s;
+}
+
+.project-skills {
+  font-size: 1.8rem;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  padding: 10rem 0;
+}
+
+.contact-container {
+  column-gap: 28rem;
+}
+
+.contact-title-box {
+  align-self: start;
+}
+
+.contact-form-box input {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  padding-left: 2.2rem;
+}
+
+.contact-input-name,
+.contact-input-email {
+  padding: 2rem;
+}
+
+.contact-input-message {
+  padding: 1rem 0 8rem 0;
+}
+
+/* FOOTER */
+
+.footer-container {
+  margin: 0 auto;
+  padding: 1rem 0 5rem 0;
+}
